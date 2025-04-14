@@ -327,7 +327,7 @@ COPY ./xfce-firefox/src/firefox.plus/home/readme*.md "${HOME}"/
 RUN \
     chmod 744 "${HOME}"/firefox.plus/*.sh \
     && envsubst <"${HOME}/Desktop/Copy FF Preferences.desktop" >/tmp/esub.tmp && mv -f /tmp/esub.tmp "${HOME}/Desktop/Copy FF Preferences.desktop" \
-    && install -o root -g root -m 644 "${HOME}"/firefox.plus/accetto.svg /usr/share/icons/hicolor/scalable/apps/ \
+    && install -o root -g root -m 644 "${HOME}"/firefox.plus/toanlk.svg /usr/share/icons/hicolor/scalable/apps/ \
     && gtk-update-icon-cache -f /usr/share/icons/hicolor
 
 
@@ -397,20 +397,20 @@ ARG ARG_VCS_REF
 ARG ARG_VERSION_STICKER
 
 LABEL \
-    org.opencontainers.image.authors="accetto" \
+    org.opencontainers.image.authors="toanlk" \
     org.opencontainers.image.created="${ARG_CREATED}" \
     org.opencontainers.image.description="Headless Ubuntu/Xfce/VNC/noVNC containers with Internet browsers" \
-    org.opencontainers.image.documentation="https://github.com/accetto/ubuntu-vnc-xfce-g3" \
-    org.opencontainers.image.source="https://github.com/accetto/ubuntu-vnc-xfce-g3" \
-    org.opencontainers.image.title="accetto/ubuntu-vnc-xfce-g3" \
-    org.opencontainers.image.url="https://github.com/accetto/ubuntu-vnc-xfce-g3" \
-    org.opencontainers.image.vendor="https://github.com/accetto" \
+    org.opencontainers.image.documentation="https://github.com/toanlk/ubuntu-vnc-xfce-g3" \
+    org.opencontainers.image.source="https://github.com/toanlk/ubuntu-vnc-xfce-g3" \
+    org.opencontainers.image.title="toanlk/ubuntu-vnc-xfce-g3" \
+    org.opencontainers.image.url="https://github.com/toanlk/ubuntu-vnc-xfce-g3" \
+    org.opencontainers.image.vendor="https://github.com/toanlk" \
     org.opencontainers.image.version="${ARG_DOCKER_TAG}"
 
 LABEL \
-    org.label-schema.vcs-url="https://github.com/accetto/ubuntu-vnc-xfce-g3" \
+    org.label-schema.vcs-url="https://github.com/toanlk/ubuntu-vnc-xfce-g3" \
     org.label-schema.vcs-ref="${ARG_VCS_REF}"
 
 LABEL \
-    any.accetto.version-sticker="${ARG_VERSION_STICKER}" \
-    any.accetto.built-by="docker"
+    any.toanlk.version-sticker="${ARG_VERSION_STICKER}" \
+    any.toanlk.built-by="docker"

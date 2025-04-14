@@ -21,23 +21,23 @@ Embedded help describes the parameters:
 ```shell
 ### PWD = utils/
 
-./util-readme.sh --repo accetto/ubuntu-vnc-xfce-g3 --context=../docker/xfce --gist <deployment-gist-ID> -- preview
+./util-readme.sh --repo toanlk/ubuntu-vnc-xfce-g3 --context=../docker/xfce --gist <deployment-gist-ID> -- preview
 
-./util-readme.sh --repo accetto/ubuntu-vnc-xfce-chromium-g3 --context=../docker/xfce-chromium --gist <deployment-gist-ID> -- preview
+./util-readme.sh --repo toanlk/ubuntu-vnc-xfce-chromium-g3 --context=../docker/xfce-chromium --gist <deployment-gist-ID> -- preview
 
-./util-readme.sh --repo accetto/ubuntu-vnc-xfce-firefox-g3 --context=../docker/xfce-firefox --gist <deployment-gist-ID> -- preview
+./util-readme.sh --repo toanlk/ubuntu-vnc-xfce-firefox-g3 --context=../docker/xfce-firefox --gist <deployment-gist-ID> -- preview
 
 ### or if the environment variable 'DEPLOY_GIST_ID' has been set
 
-./util-readme.sh --repo accetto/ubuntu-vnc-xfce-g3 --context=../docker/xfce -- preview
+./util-readme.sh --repo toanlk/ubuntu-vnc-xfce-g3 --context=../docker/xfce -- preview
 
-./util-readme.sh --repo accetto/ubuntu-vnc-xfce-chromium-g3 --context=../docker/xfce-chromium -- preview
+./util-readme.sh --repo toanlk/ubuntu-vnc-xfce-chromium-g3 --context=../docker/xfce-chromium -- preview
 
-./util-readme.sh --repo accetto/ubuntu-vnc-xfce-firefox-g3 --context=../docker/xfce-firefox -- preview
+./util-readme.sh --repo toanlk/ubuntu-vnc-xfce-firefox-g3 --context=../docker/xfce-firefox -- preview
 ```
 
 See the Wiki page ["Utility util-readme.sh"][this-wiki-utility-util-readme] for more information.
 
 ***
 
-[this-wiki-utility-util-readme]: https://github.com/accetto/ubuntu-vnc-xfce-g3/wiki/Utility-util-readme
+[this-wiki-utility-util-readme]: https://github.com/toanlk/ubuntu-vnc-xfce-g3/wiki/Utility-util-readme

@@ -36,7 +36,7 @@ main() {
 
                 ### get values for badges from the image metadata (labels)
                 created=$( get_label "${DOCKER_REPO}:${keeper_repo_tag}" "org.opencontainers.image.created" )
-                version_sticker=$( get_label "${DOCKER_REPO}:${keeper_repo_tag}" "any.accetto.version-sticker" )
+                version_sticker=$( get_label "${DOCKER_REPO}:${keeper_repo_tag}" "any.toanlk.version-sticker" )
                 version_sticker_verbose=$( cat "${_build_context}/${_scrap_version_sticker_verbose_current}" )
 
                 ### update badge endpoints in the builder repository gist

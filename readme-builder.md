@@ -93,7 +93,7 @@ Be aware that the following environment variables are mandatory and must be alwa
 Ensure that your `secrets.rc` file contains at least the lines similar to these:
 
 ```shell
-export REPO_OWNER_NAME="accetto"
+export REPO_OWNER_NAME="toanlk"
 export BUILDER_REPO="headless-ubuntu-g3"
 ```
 
@@ -107,7 +107,7 @@ declare _owner="${REPO_OWNER_NAME:?Need repo owner name}"
 DOCKER_REPO="${_owner}/${BUILDER_REPO:?Need builder repo name}"
 
 ### modified lines
-declare _owner="${REPO_OWNER_NAME:-accetto}"
+declare _owner="${REPO_OWNER_NAME:-toanlk}"
 DOCKER_REPO="${_owner}/${BUILDER_REPO:-headless-ubuntu-g3}"
 ```
 
@@ -238,4 +238,4 @@ See the file [readme-local-building-example][this-readme-local-building-example]
 
 ***
 
-[this-readme-local-building-example]: https://github.com/accetto/ubuntu-vnc-xfce-g3/blob/master/readme-local-building-example.md
+[this-readme-local-building-example]: https://github.com/toanlk/ubuntu-vnc-xfce-g3/blob/master/readme-local-building-example.md

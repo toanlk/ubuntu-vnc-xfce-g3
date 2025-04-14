@@ -1,4 +1,4 @@
-# docker build -f Dockerfile.extend -t accetto/ubuntu-vnc-xfce-g3:extended .
+# docker build -f Dockerfile.extend -t toanlk/ubuntu-vnc-xfce-g3:extended .
 
 ### This is an example of extending the images.
 
@@ -14,9 +14,9 @@
 ###     from your extending Dockerfile (like this one)
 
 ### choose a base image and tag
-ARG BASEIMAGE="accetto/ubuntu-vnc-xfce-g3"
-# ARG BASEIMAGE="accetto/ubuntu-vnc-xfce-chromium-g3"
-# ARG BASEIMAGE="accetto/ubuntu-vnc-xfce-firefox-g3"
+ARG BASEIMAGE="toanlk/ubuntu-vnc-xfce-g3"
+# ARG BASEIMAGE="toanlk/ubuntu-vnc-xfce-chromium-g3"
+# ARG BASEIMAGE="toanlk/ubuntu-vnc-xfce-firefox-g3"
 ARG BASETAG="latest"
 
 FROM ${BASEIMAGE}:${BASETAG}

@@ -1,5 +1,5 @@
 #!/bin/bash
-### @accetto (https://github.com/accetto) (https://hub.docker.com/u/accetto/)
+### @toanlk (https://github.com/toanlk) (https://hub.docker.com/u/toanlk/)
 
 # ARG_OPTIONAL_SINGLE([source],[s],[Source folder (where 'user.js' is).],[${HOME}/firefox.plus])
 # ARG_OPTIONAL_SINGLE([target],[t],[Target folder (where Firefox profiles are).],[${HOME}/.mozilla/firefox])

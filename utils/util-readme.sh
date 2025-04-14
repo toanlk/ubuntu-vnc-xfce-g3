@@ -1,8 +1,8 @@
 #!/bin/bash -e
 
-### @accetto, December 2020
-### https://github.com/accetto/ubuntu-vnc-xfce-g3
-### https://github.com/accetto/ubuntu-vnc-xfce-g3/wiki
+### @toanlk, December 2020
+### https://github.com/toanlk/ubuntu-vnc-xfce-g3
+### https://github.com/toanlk/ubuntu-vnc-xfce-g3/wiki
 
 # ARG_VERSION([echo $0 v22.11.04])
 # ARG_HELP([Utility for previewing README files intended for Docker Hub. The prepared files can be manually copy-and-pasted to Docker Hub. The utility should be run from the '/utils' directory.])

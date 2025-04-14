@@ -1,5 +1,5 @@
 #!/bin/bash -e
-### @accetto, August 2021
+### @toanlk, August 2021
 ### Updated: September 2022, January 2023, September 2024
 
 ### depends on the hook scripts

@@ -125,7 +125,7 @@ Be aware that the following environment variables are mandatory and must be alwa
 Ensure that your `secrets.rc` file contains at least the lines similar to these:
 
 ```shell
-export REPO_OWNER_NAME="accetto"
+export REPO_OWNER_NAME="toanlk"
 export BUILDER_REPO="headless-ubuntu-g3"
 ```
 
@@ -139,7 +139,7 @@ declare _owner="${REPO_OWNER_NAME:?Need repo owner name}"
 DOCKER_REPO="${_owner}/${BUILDER_REPO:?Need builder repo name}"
 
 ### modified lines
-declare _owner="${REPO_OWNER_NAME:-accetto}"
+declare _owner="${REPO_OWNER_NAME:-toanlk}"
 DOCKER_REPO="${_owner}/${BUILDER_REPO:-headless-ubuntu-g3}"
 ```
 
@@ -205,18 +205,18 @@ You can also use one of the **named groups**:
 The **family mode** is intended for efficient building of sets of dependent images.
 
 **Remark:** Since the version `G3v3` is this mode for advanced use only.
-The previous images `accetto/ubuntu-vnc-xfce-g3:latest-fugo` and `accetto/ubuntu-vnc-xfce-firefox-g3:latest-plus` that used it are not published any more.
-The image `accetto/ubuntu-vnc-xfce-firefox-g3:latest-plus` has been renamed to `accetto/ubuntu-vnc-xfce-firefox-g3:latest`.
+The previous images `toanlk/ubuntu-vnc-xfce-g3:latest-fugo` and `toanlk/ubuntu-vnc-xfce-firefox-g3:latest-plus` that used it are not published any more.
+The image `toanlk/ubuntu-vnc-xfce-firefox-g3:latest-plus` has been renamed to `toanlk/ubuntu-vnc-xfce-firefox-g3:latest`.
 
 The dependency in this context is meant more technically than conceptually.
 
 The following example will help to understand the concept.
 
-The image `accetto/ubuntu-vnc-xfce-g3:latest-fugo` added some additional features to the image `accetto/ubuntu-vnc-xfce-g3:latest`, but otherwise were both images identical.
+The image `toanlk/ubuntu-vnc-xfce-g3:latest-fugo` added some additional features to the image `toanlk/ubuntu-vnc-xfce-g3:latest`, but otherwise were both images identical.
 
 In such case a conclusion can be made, that if the `latest` tag does not need a refresh, then also the `latest-fugo` tag doesn't need it and it can be skipped.
 
-There had been a similar dependency between the images `accetto/ubuntu-vnc-xfce-firefox-g3:latest-plus` and `accetto/ubuntu-vnc-xfce-firefox-g3:latest`.
+There had been a similar dependency between the images `toanlk/ubuntu-vnc-xfce-firefox-g3:latest-plus` and `toanlk/ubuntu-vnc-xfce-firefox-g3:latest`.
 
 This kind of family-like relation allows to refresh the images more efficiently by skipping the "children" if the "parent" doesn't need a re-build.
 
@@ -300,9 +300,9 @@ The output can look out like this:
 ```text
 --> Version stickers:
 
-Current version sticker of 'accetto/devops-headless-ubuntu-g3:latest-chromium_helper': ubuntu20.04.5-chromium105.0.5195.102
-Current version sticker of 'accetto/devops-headless-ubuntu-g3:latest-firefox_helper': ubuntu20.04.5-firefox105.0
-Current version sticker of 'accetto/devops-headless-ubuntu-g3:latest_helper': ubuntu20.04.5
+Current version sticker of 'toanlk/devops-headless-ubuntu-g3:latest-chromium_helper': ubuntu20.04.5-chromium105.0.5195.102
+Current version sticker of 'toanlk/devops-headless-ubuntu-g3:latest-firefox_helper': ubuntu20.04.5-firefox105.0
+Current version sticker of 'toanlk/devops-headless-ubuntu-g3:latest_helper': ubuntu20.04.5
 ```
 
 #### Timing command
@@ -351,4 +351,4 @@ There is no way to build the images only from particular Dockerfile stages using
 
 ***
 
-[readme-builder]: https://github.com/accetto/ubuntu-vnc-xfce-g3/blob/master/readme-builder.md
+[readme-builder]: https://github.com/toanlk/ubuntu-vnc-xfce-g3/blob/master/readme-builder.md

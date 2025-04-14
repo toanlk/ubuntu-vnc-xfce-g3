@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Project `accetto/ubuntu-vnc-xfce-g3`
+## Project `toanlk/ubuntu-vnc-xfce-g3`
 
 [User Guide][this-user-guide] - [Docker Hub][this-docker] - [Git Hub][this-github] - [Wiki][this-wiki] - [Discussions][this-discussions]
 
@@ -37,7 +37,7 @@ Internally, the helper image is built by the `pre_build` hook script and then us
 
 The helper image is now deleted by the `build` hook script and not the `pre_build` hook script as before.
 
-The `Dockerfiles` got a new metadata label `any.accetto.built-by="docker"`.
+The `Dockerfiles` got a new metadata label `any.toanlk.built-by="docker"`.
 
 #### Remarks
 
@@ -54,7 +54,7 @@ For example:
 
 ### then somewhere near the end of the log
 Removing helper image
-Error response from daemon: No such image: accetto/headless-ubuntu-g3_latest-helper:latest
+Error response from daemon: No such image: toanlk/headless-ubuntu-g3_latest-helper:latest
 ```
 
 ### Release 25.01
@@ -186,7 +186,7 @@ They need to move the content from the previous file `$HOME"/.vnc_override.rc` i
 
 This release mitigates the problems with the edge use case, when users bind the whole `$HOME` directory to an external folder on the host computer.
 
-Please note that I recommend to avoid doing that. If you really want to, then your best bet is using the Docker volumes. That is the only option I've found, which works across the environments. In the discussion thread [#39](https://github.com/accetto/ubuntu-vnc-xfce-g3/discussions/39) I've described the way, how to initialize a bound `$HOME` folder, if you really want to give it a try.
+Please note that I recommend to avoid doing that. If you really want to, then your best bet is using the Docker volumes. That is the only option I've found, which works across the environments. In the discussion thread [#39](https://github.com/toanlk/ubuntu-vnc-xfce-g3/discussions/39) I've described the way, how to initialize a bound `$HOME` folder, if you really want to give it a try.
 
 Main changes:
 
@@ -264,8 +264,8 @@ Changes in deployment:
   - `latest` images will be doubled by the tags with the prefix `22.04`
 - images based on `Ubuntu 20.04 LTS` will still be published
   - their tags will begin with the prefix `20.04`
-- image `accetto/ubuntu-vnc-xfce-g3:latest-fugo` will not be published any more (it can still be built manually)
-- image `accetto/ubuntu-vnc-xfce-firefox-g3:latest-plus`, containing the **Firefox Plus Features**, becomes the `latest` image now
+- image `toanlk/ubuntu-vnc-xfce-g3:latest-fugo` will not be published any more (it can still be built manually)
+- image `toanlk/ubuntu-vnc-xfce-firefox-g3:latest-plus`, containing the **Firefox Plus Features**, becomes the `latest` image now
   - previous `latest` image without the **Firefox Plus Features** will not be published any more (it can still be built manually)
 
 Support of additional building parameters:
@@ -360,7 +360,7 @@ This is just a maintenance release.
   - **noVNC** got a new optional argument, which is passed through a new environment variable **NOVNC_HEARTBEAT**
   
     - set the variable by creating the container, like `docker run -e NOVNC_HEARTBEAT=30` for the ping interval 30 seconds
-    - it should prevent disconnections because of inactivity, if the container is used behind load-balancers or reverse proxies ([issue #23](https://github.com/accetto/ubuntu-vnc-xfce-g3/issues/23))
+    - it should prevent disconnections because of inactivity, if the container is used behind load-balancers or reverse proxies ([issue #23](https://github.com/toanlk/ubuntu-vnc-xfce-g3/issues/23))
 
   - script `vnc_startup.rc` has been adjusted and improved
   - script `version_of.sh` has been adjusted
@@ -455,7 +455,7 @@ This is just a maintenance release.
 
 ### Release 21.04
 
-- TigerVNC from [Release Mirror on accetto/tigervnc][accetto-tigervnc-release-mirror] because **Bintray** is closing on 2021-05-01
+- TigerVNC from [Release Mirror on toanlk/tigervnc][toanlk-tigervnc-release-mirror] because **Bintray** is closing on 2021-05-01
 
 ### Release 21.03.1
 
@@ -522,7 +522,7 @@ This is just a maintenance release.
 
 ### Release 21.02
 
-- VNC password not enforced any more ([issue #6](https://github.com/accetto/ubuntu-vnc-xfce-g3/issues/6))
+- VNC password not enforced any more ([issue #6](https://github.com/toanlk/ubuntu-vnc-xfce-g3/issues/6))
   - it can be disabled by `run -e VNC_PW=""`
   - readme files also updated
 
@@ -541,28 +541,28 @@ This is just a maintenance release.
 ### Release 20.12
 
 - Initial release
-  - **xfce** into [accetto/ubuntu-vnc-xfce-g3][accetto-ubuntu-vnc-xfce-g3]
-  - **xfce-chromium** into [accetto/ubuntu-vnc-xfce-chromium-g3][accetto-ubuntu-vnc-xfce-chromium-g3]
-  - **xfce-firefox** into [accetto/ubuntu-vnc-xfce-firefox-g3][accetto-ubuntu-vnc-xfce-firefox-g3]
+  - **xfce** into [toanlk/ubuntu-vnc-xfce-g3][toanlk-ubuntu-vnc-xfce-g3]
+  - **xfce-chromium** into [toanlk/ubuntu-vnc-xfce-chromium-g3][toanlk-ubuntu-vnc-xfce-chromium-g3]
+  - **xfce-firefox** into [toanlk/ubuntu-vnc-xfce-firefox-g3][toanlk-ubuntu-vnc-xfce-firefox-g3]
 
 ***
 
-[this-user-guide]: https://accetto.github.io/user-guide-g3/
+[this-user-guide]: https://toanlk.github.io/user-guide-g3/
 
-[this-docker]: https://hub.docker.com/u/accetto/
+[this-docker]: https://hub.docker.com/u/toanlk/
 
-[this-github]: https://github.com/accetto/ubuntu-vnc-xfce-g3/
+[this-github]: https://github.com/toanlk/ubuntu-vnc-xfce-g3/
 
-[this-wiki]: https://github.com/accetto/ubuntu-vnc-xfce-g3/wiki
+[this-wiki]: https://github.com/toanlk/ubuntu-vnc-xfce-g3/wiki
 
-[this-discussions]: https://github.com/accetto/ubuntu-vnc-xfce-g3/discussions
+[this-discussions]: https://github.com/toanlk/ubuntu-vnc-xfce-g3/discussions
 
-[this-diagram-dockerfile-stages]: https://raw.githubusercontent.com/accetto/ubuntu-vnc-xfce-g3/master/docker/doc/images/Dockerfile.xfce.png
+[this-diagram-dockerfile-stages]: https://raw.githubusercontent.com/toanlk/ubuntu-vnc-xfce-g3/master/docker/doc/images/Dockerfile.xfce.png
 
-[accetto-ubuntu-vnc-xfce-g3]: https://hub.docker.com/r/accetto/ubuntu-vnc-xfce-g3
+[toanlk-ubuntu-vnc-xfce-g3]: https://hub.docker.com/r/toanlk/ubuntu-vnc-xfce-g3
 
-[accetto-ubuntu-vnc-xfce-chromium-g3]: https://hub.docker.com/r/accetto/ubuntu-vnc-xfce-chromium-g3
+[toanlk-ubuntu-vnc-xfce-chromium-g3]: https://hub.docker.com/r/toanlk/ubuntu-vnc-xfce-chromium-g3
 
-[accetto-ubuntu-vnc-xfce-firefox-g3]: https://hub.docker.com/r/accetto/ubuntu-vnc-xfce-firefox-g3
+[toanlk-ubuntu-vnc-xfce-firefox-g3]: https://hub.docker.com/r/toanlk/ubuntu-vnc-xfce-firefox-g3
 
-[accetto-tigervnc-release-mirror]: https://github.com/accetto/tigervnc/releases
+[toanlk-tigervnc-release-mirror]: https://github.com/toanlk/tigervnc/releases

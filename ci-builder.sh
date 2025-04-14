@@ -1,6 +1,6 @@
 #!/bin/bash
 ### do not use '-e'
-### @accetto, September 2022
+### @toanlk, September 2022
 ### Updated: January 2023, September 2024
 
 ### depends on the script 'builder.sh'

@@ -52,7 +52,7 @@ You can delete the local `g3-cache` folder any time, because it will be re-creat
 
 The absolute path to the root folder of the shared `g3-cache` should be set as the value of the environment variable `SHARED_G3_CACHE_PATH`.
 
-The same shared `g3-cache` is usually used also by the sibling projects [accetto/headless-drawing-g3][accetto-github-headless-drawing-g3] and [accetto/headless-coding-g3][accetto-github-headless-coding-g3].
+The same shared `g3-cache` is usually used also by the sibling projects [toanlk/headless-drawing-g3][toanlk-github-headless-drawing-g3] and [toanlk/headless-coding-g3][toanlk-github-headless-coding-g3].
 
 ## Helper script `cache`
 
@@ -66,10 +66,10 @@ However, it can be executed also stand-alone.
 
 ***
 
-[this-wiki-concepts-of-g3-cache]: https://github.com/accetto/ubuntu-vnc-xfce-g3/wiki/Concepts-of-g3-cache
-[this-wiki-how-g3-cache-works]: https://github.com/accetto/ubuntu-vnc-xfce-g3/wiki/How-g3-cache-works
+[this-wiki-concepts-of-g3-cache]: https://github.com/toanlk/ubuntu-vnc-xfce-g3/wiki/Concepts-of-g3-cache
+[this-wiki-how-g3-cache-works]: https://github.com/toanlk/ubuntu-vnc-xfce-g3/wiki/How-g3-cache-works
 
-[accetto-github-headless-coding-g3]:https://github.com/accetto/headless-coding-g3
-[accetto-github-headless-drawing-g3]: https://github.com/accetto/headless-drawing-g3
+[toanlk-github-headless-coding-g3]:https://github.com/toanlk/headless-coding-g3
+[toanlk-github-headless-drawing-g3]: https://github.com/toanlk/headless-drawing-g3
 
 [docker-doc-docker-build]: https://docs.docker.com/develop/develop-images/build_enhancements/

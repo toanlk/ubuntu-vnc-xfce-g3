@@ -2,7 +2,7 @@
 
 This is only a README placeholder, which will be replaced by the image deployment workflow.
 
-Useful links from **this project's** GitHub repository [accetto/ubuntu-vnc-xfce-g3][this-home]:
+Useful links from **this project's** GitHub repository [toanlk/ubuntu-vnc-xfce-g3][this-home]:
 
 - project [Readme][this-readme], [Changelog][this-changelog], [Issues][this-issues], [Wiki][this-wiki] and [Discussions][this-discussions]
 - base images **Ubuntu/Xfce/VNC/noVNC**
@@ -19,23 +19,23 @@ Useful links from **this project's** GitHub repository [accetto/ubuntu-vnc-xfce-
 
 ***
 
-[this-changelog]: https://github.com/accetto/ubuntu-vnc-xfce-g3/blob/master/CHANGELOG.md
-[this-discussions]: https://github.com/accetto/ubuntu-vnc-xfce-g3/discussions
-[this-dockerfile-22-04]: https://github.com/accetto/ubuntu-vnc-xfce-g3/blob/master/docker/Dockerfile.xfce.22-04
-[this-dockerfile-20-04]: https://github.com/accetto/ubuntu-vnc-xfce-g3/blob/master/docker/Dockerfile.xfce.20-04
+[this-changelog]: https://github.com/toanlk/ubuntu-vnc-xfce-g3/blob/master/CHANGELOG.md
+[this-discussions]: https://github.com/toanlk/ubuntu-vnc-xfce-g3/discussions
+[this-dockerfile-22-04]: https://github.com/toanlk/ubuntu-vnc-xfce-g3/blob/master/docker/Dockerfile.xfce.22-04
+[this-dockerfile-20-04]: https://github.com/toanlk/ubuntu-vnc-xfce-g3/blob/master/docker/Dockerfile.xfce.20-04
 
-[this-home]: https://github.com/accetto/ubuntu-vnc-xfce-g3
-[this-issues]: https://github.com/accetto/ubuntu-vnc-xfce-g3/issues
-[this-readme]: https://github.com/accetto/ubuntu-vnc-xfce-g3/blob/master/README.md
-[this-wiki]: https://github.com/accetto/ubuntu-vnc-xfce-g3/wiki
+[this-home]: https://github.com/toanlk/ubuntu-vnc-xfce-g3
+[this-issues]: https://github.com/toanlk/ubuntu-vnc-xfce-g3/issues
+[this-readme]: https://github.com/toanlk/ubuntu-vnc-xfce-g3/blob/master/README.md
+[this-wiki]: https://github.com/toanlk/ubuntu-vnc-xfce-g3/wiki
 
-[this-diagram-dockerfile-stages]: https://raw.githubusercontent.com/accetto/ubuntu-vnc-xfce-g3/master/docker/doc/images/Dockerfile.xfce.png
+[this-diagram-dockerfile-stages]: https://raw.githubusercontent.com/toanlk/ubuntu-vnc-xfce-g3/master/docker/doc/images/Dockerfile.xfce.png
 
-[this-dockerhub-image-base]: https://hub.docker.com/r/accetto/ubuntu-vnc-xfce-g3
-[this-readme-image-base]: https://github.com/accetto/ubuntu-vnc-xfce-g3/blob/master/docker/xfce/README.md
+[this-dockerhub-image-base]: https://hub.docker.com/r/toanlk/ubuntu-vnc-xfce-g3
+[this-readme-image-base]: https://github.com/toanlk/ubuntu-vnc-xfce-g3/blob/master/docker/xfce/README.md
 
-[this-dockerhub-image-chromium]: https://hub.docker.com/r/accetto/ubuntu-vnc-xfce-chromium-g3
-[this-readme-image-chromium]: https://github.com/accetto/ubuntu-vnc-xfce-g3/blob/master/docker/xfce-chromium/README.md
+[this-dockerhub-image-chromium]: https://hub.docker.com/r/toanlk/ubuntu-vnc-xfce-chromium-g3
+[this-readme-image-chromium]: https://github.com/toanlk/ubuntu-vnc-xfce-g3/blob/master/docker/xfce-chromium/README.md
 
-[this-dockerhub-image-firefox]: https://hub.docker.com/r/accetto/ubuntu-vnc-xfce-firefox-g3
-[this-readme-image-firefox]: https://github.com/accetto/ubuntu-vnc-xfce-g3/blob/master/docker/xfce-firefox/README.md
+[this-dockerhub-image-firefox]: https://hub.docker.com/r/toanlk/ubuntu-vnc-xfce-firefox-g3
+[this-readme-image-firefox]: https://github.com/toanlk/ubuntu-vnc-xfce-g3/blob/master/docker/xfce-firefox/README.md
